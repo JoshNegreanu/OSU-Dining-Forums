@@ -1,0 +1,91 @@
+<!doctype html>
+
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ENGR 102 Project</title>
+
+	<style>
+		body {
+			margin: 0;
+			font-family: Helvetica;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.topnav a:hover {
+			background-color: black;
+			color: white;
+		}
+
+		.topnav a.active {
+			background-color: orangered;
+			color: white;
+		}
+
+		.padding {
+			padding: 5px 5px 5px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="topnav">
+		<img src="crest.png" alt="" width="30" height="38" align="left" class="padding"/>
+		<a href="ENGR 102 Project.html">Oregon State University Dining Forums</a>
+		<a class="active" href="createyourown.html">Create Your Own</a>
+		<a href="mostpopular.html">Most Popular</a>
+		<a href="tags.html">Tags</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<h2>Create Your Own</h2>
+		
+		
+		<form id="test-form" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdTag23IqCxAz-JmL9KddnERpT_KaYz9Hdbfld2gsBKOOuEbQ/formResponse">
+			<label for="firstname">First name:</label><br>
+			<input type="text" name="entry.479708827" placeholder="First Name"/><br>
+			<br>
+			<label for="lastname">Last name:</label><br>
+			<input type="text" name="entry.1201396456" placeholder="Last Name"><br>
+			<br>
+			<label for="diningcenter">Dining Center:</label><br>
+			<input type="radio" name="entry.644279726" value="west">
+			<label for="west">West</label><br>
+			<input type="radio" name="entry.644279726" value="mcnary">
+			<label for="mcnary">McNary</label><br>
+			<input type="radio" name="entry.644279726" value="arnold">
+			<label for="arnold">Arnold</label><br>
+			<br>
+			<label for="tags">Tags:</label><br>
+			<input type="checkbox" name="entry.1862458916" value="vegetarian">
+			<label for="vegetarian"> Vegetarian</label><br>
+			<input type="checkbox" name="entry.1862458916" value="vegan">
+			<label for="vegan"> Vegan</label><br>
+			<input type="checkbox" name="entry.1862458916" value="keto">
+			<label for="keto"> Keto</label><br>
+			<input type="checkbox" name="entry.1862458916" value="glutenfree">
+			<label for="glutenfree"> Gluten Free</label><br>
+			<br>
+
+			<button type="submit" id="submit-form">Submit</button>
+		</form>
+		
+	</div>
+</body>
+	
+</html>
