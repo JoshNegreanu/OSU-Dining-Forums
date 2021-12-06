@@ -10,7 +10,9 @@ If you would like to modify this code and use your own Google Spreadsheet, do be
 Other pages besides ENGR 102 Project.html and createyourown.html are not currently implemented but may be in the future.
 
 Here's a video of how the website loooks as of December 5th, 2021:
+
 https://user-images.githubusercontent.com/33441103/144790710-ffc7fc04-3ff1-40d8-ae41-6f6664cd4ee7.mp4
 
 Here's the final presentation for this project:
+
 https://docs.google.com/presentation/d/1IoqGGgXDripyZu9KtH1PdJ0Ra1wDzxMRQFfuZ7zRFuQ/edit?usp=sharing
