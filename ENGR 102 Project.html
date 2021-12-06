@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 
 <head>
@@ -65,19 +66,29 @@
 	
 	<script type = "text/javascript" language = "javascript">
 		
-		//const spreadsheetURL = 'https://docs.google.com/spreadsheets/d/1ywAAuygVtvpXbq-BmOafqMJYQICeXLRiNzMw-OWi_8E/gviz/tq?tqx=out:json';
-		
-		const spreadsheetURL = "https://opensheet.vercel.app/1ywAAuygVtvpXbq-BmOafqMJYQICeXLRiNzMw-OWi_8E/1"
+		const spreadsheetURL = "https://opensheet.vercel.app/1n0Rwyyp1uMqR9_pFEHIZn-XvleARV8khWH7fHsXDjHA/1"
 		
 		$.getJSON(spreadsheetURL, function(data) {
-			//const myArr = JSON.parse(data);
 			
 			for (index = 0; index < data.length; index ++) {
 				
-				document.getElementById('diet_list').innerHTML += '<li>' + "DIET PLAN PUBLISHED ON: " + data[index]["Timestamp"] + '<p style="margin-left: 40px">' + "NAME: " + data[index]["first name"] + " " + data[index]["lastname"] + '</p>' +
-				'<p style="margin-left: 40px">' + "DINING CENTER: " + data[index]["diningcenter"] + '</p>' +
-				'<p style="margin-left: 40px">' + "DIETARY TAGS: " + data[index]["tags"] + '</p>' +
-				'</li>';
+				document.getElementById('diet_list').innerHTML += '<li>' + '<b>' + "DIET PLAN PUBLISHED ON: " + data[index]["Timestamp"] + '</b>' +
+				'<p style="margin-left: 40px">' + '<b>' + "NAME: " + '</b>' + data[index]["firstname"] + " " + data[index]["lastname"] + '</p>' +
+					
+				'<p style="margin-left: 40px">' + '<b>' + "MEAL 1:" + '</b>' + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DINING CENTER: " + '</b>' + data[index]["meal1diningcenter"] + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DESCRIPTION: " + '</b>' + data[index]["meal1description"] + '</p>' +
+					
+				'<p style="margin-left: 40px">' + '<b>' + "MEAL 2:" + '</b>' + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DINING CENTER: " + '</b>' + data[index]["meal2diningcenter"] + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DESCRIPTION: " + '</b>' + data[index]["meal2description"] + '</p>' +
+					
+				'<p style="margin-left: 40px">' + '<b>' + "MEAL 3:" + '</b>' + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DINING CENTER: " + '</b>' + data[index]["meal3diningcenter"] + '</p>' +
+				'<p style="margin-left: 80px">' + '<b>' + "DESCRIPTION: " + '</b>' + data[index]["meal3description"] + '</p>' +
+					
+				'<p style="margin-left: 40px">' + '<b>' + "DIETARY RESTRICTION TAGS: " + '</b>' + data[index]["dietaryrestrictiontags"] + '</p>' +
+				"----------------------------------------------------------------------" + '<br>' + '</br>' + '</li>';
 			}
 			
 		})
